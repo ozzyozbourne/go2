@@ -22,3 +22,11 @@ func main() {
 	sort.Sort(myIntArr(a))
 	fmt.Printf("%v\n", a)
 }
+
+// Go do something
+func adder(i ...int) (sum int) {
+	for _, v := range i {
+		sum += v
+	}
+	return
+}
